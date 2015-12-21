@@ -21,18 +21,18 @@ public class TestMain {
 		//情景3：隐式调用垃圾回收，模拟实际应用中jvm内存损耗
 //		Author author = new Author("黄浦", 25);//强引用
 //		author = null;
-//		ReferenceTest.drainMemory();//消耗大量内存，让author得以回收，如author不置空则不会被回收
+//		ConsumeMemory.drainMemory();//消耗大量内存，让author得以回收，如author不置空则不会被回收
 		
 		
 		// Java对引用分类
 		// 强引用 如果有引用，则不会被回收
 //		Author author = new Author("黄浦", 25);
-//		ReferenceTest.drainMemory();
+//		ConsumeMemory.drainMemory();
 //		System.gc();
 		
 		// 软引用 当内存不足时，就会被回收
 //		 SoftReference ref = new SoftReference(new Author("黄浦", 25));
-//	     ReferenceTest.drainMemory();
+//	     ConsumeMemory.drainMemory();
 //		 System.gc();
 		
 		// 若引用 在JVM垃圾回收运行时，弱引用被终止.
